@@ -1,0 +1,12 @@
+<html>
+<form action="/showdata/" method="POST">
+{% csrf_token %}
+<table>
+<tr><td>URL : {{m.url}}</td></tr>
+<tr><td>Title : {{m.title}}</td></tr>
+<tr><td>Descrption :{{m.meta_desc}}</td></tr>
+<tr><td>Keywords :{{m.meta_keyw}}</td></tr></table>
+<input type="submit" value="Submit">
+</form>
+<a href="/showform/"><input type="button" value="Enter New Url"></a>
+</html>    
