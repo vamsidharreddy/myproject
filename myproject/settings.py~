@@ -16,7 +16,11 @@ DATABASES = {
         # The following settings are not used with sqlite3:
         'USER': 'mysql',
         'PASSWORD': 'Vamsi!',
+<<<<<<< HEAD
         'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+=======
+        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+>>>>>>> af723129d3705628ab69424b7cf40c0b7f5c7dba
         'PORT': '',                      # Set to empty string for default.
     }
 }
