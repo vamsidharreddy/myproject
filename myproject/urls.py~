@@ -11,9 +11,10 @@ urlpatterns = patterns('',
 <<<<<<< HEAD
     url(r'^$', 'metaurl.views.showform'), 
     url(r'^showdata/','metaurl.views.getdata'),
+    url(r'^newurl/','metaurl.views.showform'),
 =======
     url(r'^showform/', 'metaurl.views.showform'), 
-    url(r'^showdata/','metaurl.views,getdata'),
+    url(r'^showdata/','metaurl.views.getdata'),
 >>>>>>> af723129d3705628ab69424b7cf40c0b7f5c7dba
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

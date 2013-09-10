@@ -8,16 +8,11 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'myproject.views.home', name='home'),
     url(r'^getdata/', 'metaurl.views.getdata'),
-<<<<<<< HEAD
+
     url(r'^$', 'metaurl.views.showform'), 
     url(r'^showdata/','metaurl.views.getdata'),
     url(r'^newurl/','metaurl.views.showform'),
-=======
-    url(r'^showform/', 'metaurl.views.showform'), 
-    url(r'^showdata/','metaurl.views.getdata'),
->>>>>>> af723129d3705628ab69424b7cf40c0b7f5c7dba
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),

@@ -16,9 +16,12 @@ def getdata(request):
        try:
           m=metadata.objects.get(pk=url)
           m1=metadataform(instance=m)
-       except:   
-          response=urllib2.urlopen(url)
-          st=response.read()
+       except:
+          try:   
+              response=urllib2.urlopen(url)
+              st=response.read()
+          except:
+              return HttpResponse("URL is not Valid")
           m1=re.compile('<meta name="description" content="(.*?)."', re.DOTALL).search(st)
           m2=re.compile('<meta name="keywords" content="(.*?)"',re.DOTALL).search(st)
           m3=re.compile('<title.*?>(.*?)</title>',re.DOTALL).search(st)

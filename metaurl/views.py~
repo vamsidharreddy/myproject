@@ -40,7 +40,7 @@ def getdata(request):
           m1=metadataform(instance=m)
        return render_to_response('showdata.html',{'m':m1},context_instance=RequestContext(request))
     else:
-       k=metadata.objects.get(pk=request.POST.get('url))
+       k=metadata.objects.get(pk=request.POST.get('url'))
        m=metadataform(request.POST,instance=k)
        if m.is_valid():
           m.save()

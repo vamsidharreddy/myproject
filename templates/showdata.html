@@ -1,5 +1,5 @@
 <html>
-<<<<<<< HEAD
+
 <head>
 <title>Meta Descrption of the webpage</title>
 <h2>Data Record</h2>
@@ -19,16 +19,4 @@ Keywords :{{m.meta_keyw}}
 <input type="submit" value="Submit">
 </form>
 <a href="/newurl/"><input type="button" value="Enter New Url"></a>
-=======
-<form action="/showdata/" method="POST">
-{% csrf_token %}
-<table>
-<tr><td>URL : {{m.url}}</td></tr>
-<tr><td>Title : {{m.title}}</td></tr>
-<tr><td>Descrption :{{m.meta_desc}}</td></tr>
-<tr><td>Keywords :{{m.meta_keyw}}</td></tr></table>
-<input type="submit" value="Submit">
-</form>
-<a href="/showform/"><input type="button" value="Enter New Url"></a>
->>>>>>> af723129d3705628ab69424b7cf40c0b7f5c7dba
 </html>    

@@ -1,5 +1,7 @@
 <html>
 <<<<<<< HEAD
+<head>
+<title>Meta Descrption of the webpage</title>
 <h2>Data Record</h2>
 <br><br/>
 <form action="/showdata/" method="POST">
@@ -27,5 +29,6 @@ Keywords :{{m.meta_keyw}}
 <tr><td>Keywords :{{m.meta_keyw}}</td></tr></table>
 <input type="submit" value="Submit">
 </form>
+<a href="/showform/"><input type="button" value="Enter New Url"></a>
 >>>>>>> af723129d3705628ab69424b7cf40c0b7f5c7dba
 </html>    
